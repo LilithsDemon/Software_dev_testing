@@ -1,0 +1,26 @@
+FUNCTION calcPrice(PASS PARAMATERS varBedrooms, varToilets, varGardenFeet, varHouseFeet)
+    SET total = 0
+    total = total + (varBedrooms * 25000)
+    total = total + (varToilets * 15000)
+    total = total + (varGardenFeet * 60)
+    total = total + (varHouseFeet * 100)
+
+    return total
+}
+
+PROGRAM START (MAIN)
+    OUTPUT "Find final price of a a property"
+    OUTPUT "What is the number of bedrooms"
+    INPUT number AS varBedrooms
+    OUTPUT "What is the number of toilets in the house"
+    INPUT number AS varToilets
+    OUTPUT "How many feet is there in the garden"
+    INPUT number AS varGardenFeet
+    OTUPUT "How many feet is there in the house"
+    INPUT number AS varHouseFeet
+
+    SET total AS CALL total(varBedrooms, varToilets, varGardenFeet, varHouseFeet)
+
+    OUTPUT "Total of course would be: " + total
+
+END PROGRAM

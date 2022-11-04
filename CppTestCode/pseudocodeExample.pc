@@ -1,0 +1,42 @@
+/* ---- Example1: ---- */
+
+OUTPUT "Enter number 1"
+INPUT first number AS varNum1
+OUTPUT "Enter number 2"
+INPUT second number AS varNum2
+
+OUPUT varNum1 multiplied by varNum2
+
+/* ---- Example2: ---- */
+
+OUTPUT "Enter a number"
+INPUT number AS varNumber
+IF varNumber is NOT equal to 5 OR varNumber is NOT equal to 6
+    OUTPUT "That number is not a 5 or a 6"
+ENDIF
+
+/* ---- Example3: ---- */
+
+OUTPUT "Please enter a number: "
+INPUT number AS varNumber
+IF varNumber >= 0 AND varNumber < 10
+		SET varOutput AS "Blue"
+ELSE IF varNumber >= 10 AND varNumber < 20
+		SET varOutput AS "Red"
+ELSE IF varNumber >= than 20 AND <= 30
+		SET varOutput AS "Green"
+ELSE
+		SET varOutput AS "That is not a correct colour option"
+ENFIF
+		
+OUTPUT varOutput
+
+/* ---- Example4: ---- */
+
+SET varNum AS 1
+DO
+	varNum is equal to varNum + 1
+	IF varNum MOD 5 is equal to 0
+			OUPTUT varNum
+	ENDIF
+UNTIL varNum is equal to 101
