@@ -1,0 +1,63 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: violet;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1
+{
+    text-align: center;
+}
+
+main
+{
+    padding: 50px;
+    background-color: gray;
+    border-radius: 20px;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+form > input, h1
+{
+    margin-bottom: 15px;
+}
+
+form > input
+{
+    padding: 10px;
+    border: none;
+}
+
+form > input, button
+{
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 2px 2px rgba(255, 255, 255, 0.35);
+}
+
+form > button
+{
+    background-color: lightgreen;
+    border: 0;
+    transition: ease all .5s;
+}
+
+form > button:hover
+{
+    background-color: violet;
+    box-shadow: 3px 3px rgba(255, 255, 255, 0.5);
+}
