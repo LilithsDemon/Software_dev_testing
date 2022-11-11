@@ -21,6 +21,7 @@ h1
 main
 {
     padding: 50px;
+    width: 40%;
     background-color: gray;
     border-radius: 20px;
 }
